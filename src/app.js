@@ -5,7 +5,6 @@ import SettingsPage from './settingspage';
 import SearchPage from './searchpage';
 import AboutPage from './aboutpage';
 import UploadPage from './uploadpage';
-const IPFS = require('ipfs');
 var ipfsApi = {}
 
 window.ipfs = window.IpfsApi('localhost', '5001');
