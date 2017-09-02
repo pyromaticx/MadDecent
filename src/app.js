@@ -7,8 +7,8 @@ import AboutPage from './aboutpage';
 import UploadPage from './uploadpage';
 var ipfsApi = {}
 
-window.ipfs = window.IpfsApi('localhost', '5001');
-console.log(window.ipfs)
+window.ipfs = window.IpfsApi('52.170.219.55', '5001');
+console.log(window.ipfs);
 /*if(window.Ipfs) {
   window.ipfs = new window.Ipfs({
     init: true,
