@@ -5,8 +5,11 @@ import SettingsPage from './settingspage';
 import SearchPage from './searchpage';
 import AboutPage from './aboutpage';
 import UploadPage from './uploadpage';
-
+const IPFS = require('ipfs');
 var ipfsApi = {}
+
+window.ipfs = window.IpfsApi('localhost', '5001');
+console.log(window.ipfs)
 /*if(window.Ipfs) {
   window.ipfs = new window.Ipfs({
     init: true,
@@ -36,7 +39,7 @@ var ipfsApi = {}
   console.log("IPFS not connected");
 }
 */
-window.ipfs = IpfsApi(window.location.host, '8081', {protocol: 'https'});
+
 
 class App extends Component {
   render() {

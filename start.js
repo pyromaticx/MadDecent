@@ -5,9 +5,10 @@ var siteRoutes = require('./routes/siteroutes');
 var app = express();
 var port = process.env.PORT || 8080;
 var ejs = require('ejs');
+const spawn = require('child_process').spawn
 
-
-
+//Start IPFS daemon
+spawn('ipfs', ['daemon']);
 
 
 // View engine config
